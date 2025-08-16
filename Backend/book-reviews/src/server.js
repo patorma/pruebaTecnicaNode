@@ -31,9 +31,7 @@ app.use('/api/books', bookRoutes); // ruta para los libros
 //búsqueda de libros por id de portada
 /* Si existe algún libro que ya se encuentra guardado en “mi biblioteca”
 , la portada del libro debe incluirse en la respuesta*/
-app.get('/api/books/library/front-cover/:id',async (req,res) =>{
-    res.status(404).json({message: 'Endpoint de la portada no implementado'});
-});
+
 
 // Ruta para manejar errores 404
 app.use((req,res,next)=>{
@@ -49,3 +47,4 @@ app.use((err,req,res,next)=>{
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en el puerto: ${PORT}`);
 })
+

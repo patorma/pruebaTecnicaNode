@@ -13,7 +13,7 @@ const autenticacionToken = (req,res,next)=>{
      return res.status(401).json({message: 'Acceso denegado: No hay token!!!'});
   }
 
-  jwt.verify(tokren,process.env.JWT_SECRET, (err,user)=>{
+  jwt.verify(token,process.env.JWT_SECRET, (err,user)=>{
      if(err){
         console.log('Token inválido',err.message);
         return res.status(403).json({message: 'Token inválido o expiradado'});
