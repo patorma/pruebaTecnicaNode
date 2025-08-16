@@ -1,6 +1,6 @@
 // frontend/assets/scss/main.scss
-@import './variables'; // Importar variables
-@import './mixins';   // Importar mixins
+@use './variables'; // Importar variables
+@use './mixins';   // Importar mixins
 
 body {
   font-family: Arial, sans-serif;

@@ -28,9 +28,6 @@ mongoose.connect(process.env.MONGO_URI)
 app.use('/api/auth', authRoutes);//ruta para el login
 app.use('/api/books', bookRoutes); // ruta para los libros
 
-//búsqueda de libros por id de portada
-/* Si existe algún libro que ya se encuentra guardado en “mi biblioteca”
-, la portada del libro debe incluirse en la respuesta*/
 
 
 // Ruta para manejar errores 404
