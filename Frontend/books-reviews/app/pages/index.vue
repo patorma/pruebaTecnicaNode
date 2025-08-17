@@ -145,7 +145,7 @@ const handleBookSaved = () => {
       flex-wrap: wrap;
       li {
         a {
-          color: var(--secondary-color);
+          color: $secondary-color;
           text-decoration: none;
           cursor: pointer;
           &:hover {
@@ -200,7 +200,7 @@ const handleBookSaved = () => {
       }
       p {
         font-size: 0.85em;
-        color: var(--text-color-light);
+        color: $text-color-light;
         margin: 0;
       }
 
@@ -214,7 +214,7 @@ const handleBookSaved = () => {
   .no-results {
     margin-top: 20px;
     font-weight: bold;
-    color: var(--danger-color);
+    color: $danger-color;
   }
 }
 </style>

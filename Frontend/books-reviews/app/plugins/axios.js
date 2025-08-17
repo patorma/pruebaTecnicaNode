@@ -1,6 +1,6 @@
 // frontend/plugins/axios.js
 import axios from 'axios';
-import { useAuthStore } from '~/stores/auth';
+import { useAuthStore } from '../stores/auth';
 
 export default defineNuxtPlugin((nuxtApp) => {
   const config = useRuntimeConfig();

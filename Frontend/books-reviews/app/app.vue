@@ -27,8 +27,9 @@
 </template>
 
 <script setup>
-import { useAuthStore } from '~/stores/auth';
+import { useAuthStore } from './stores/auth';
 import { useRouter } from 'vue-router';
+
 
 const authStore = useAuthStore();
 const router = useRouter();
@@ -47,7 +48,7 @@ const handleLogout = async () => {
 <style lang="scss">
 /* Estilos globales de app.vue */
 .app-header {
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   color: white;
   padding: 15px 20px;
   display: flex;
@@ -71,7 +72,7 @@ const handleLogout = async () => {
     transition: color 0.2s;
 
     &:hover {
-      color: lighten(var(--primary-color), 20%);
+      color: lighten($primary-color, 20%);
     }
 
     &.router-link-active {
@@ -92,18 +93,18 @@ const handleLogout = async () => {
   }
 
   .logout-button {
-    background-color: var(--danger-color);
+    background-color: $danger-color;
     color: white;
     padding: 8px 12px;
     border: none;
-    border-radius: var(--border-radius);
+    border-radius: $border-radius;
     cursor: pointer;
     font-size: 0.9em;
     display: flex;
     align-items: center;
     gap: 5px;
     &:hover {
-      background-color: darken(var(--danger-color), 10%);
+      background-color: darken($danger-color, 10%);
     }
   }
 }

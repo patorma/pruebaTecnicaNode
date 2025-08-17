@@ -10,10 +10,10 @@
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: var(--secondary-color, #2196F3);
+  background-color: $secondary-color;
   color: white;
   padding: 10px 15px;
-  border-radius: var(--border-radius, 5px);
+  border-radius: $border-radius;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: darken(var(--secondary-color, #2196F3), 10%);
+    background-color: darken($secondary-color, 10%);
   }
 }
 </style>

@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
   ],
   css: [
-    '~/assets/scss/main.scss', // Importa tu archivo Sass principal
+    '@/assets/scss/main.scss', // Importa tu archivo Sass principal
     '@fortawesome/fontawesome-svg-core/styles.css' // Estilos base de Font Awesome
   ],
   vite: {

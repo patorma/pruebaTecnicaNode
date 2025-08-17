@@ -132,7 +132,7 @@ const saveBook = async () => {
         .detail-cover {
           max-width: 150px;
           height: auto;
-          border-radius: var(--border-radius);
+          border-radius: $border-radius;
           box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
       }
@@ -157,7 +157,7 @@ const saveBook = async () => {
         }
         .char-count {
           font-size: 0.8em;
-          color: var(--text-color-light);
+          color: $text-color-light;
           text-align: right;
           margin-bottom: 15px;
         }

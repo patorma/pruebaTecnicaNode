@@ -215,7 +215,7 @@ const confirmDelete = async (book) => {
     margin-bottom: 30px;
     padding: 15px;
     background-color: white;
-    border-radius: var(--border-radius);
+    border-radius: $border-radius;
     @include card-shadow;
 
     @media (min-width: 768px) {
@@ -238,8 +238,8 @@ const confirmDelete = async (book) => {
 
       select, input[type="checkbox"] {
         padding: 8px;
-        border-radius: var(--border-radius);
-        border: 1px solid var(--border-color);
+        border-radius: $border-radius;
+        border: 1px solid $border-color;
       }
     }
   }
@@ -248,7 +248,7 @@ const confirmDelete = async (book) => {
     text-align: center;
     margin-top: 40px;
     font-style: italic;
-    color: var(--text-color-light);
+    color: $text-color-light;
   }
 
   .book-list {
@@ -265,7 +265,7 @@ const confirmDelete = async (book) => {
     background-color: white;
     @include card-shadow;
     padding: 20px;
-    border-radius: var(--border-radius);
+    border-radius: $border-radius;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -284,7 +284,7 @@ const confirmDelete = async (book) => {
         width: 90px;
         height: 130px;
         object-fit: contain;
-        border-radius: var(--border-radius);
+        border-radius: $border-radius;
         flex-shrink: 0;
       }
 
@@ -293,7 +293,7 @@ const confirmDelete = async (book) => {
         h3 {
           margin-top: 0;
           font-size: 1.4em;
-          color: var(--primary-color);
+          color: $primary-color;
         }
         p {
           margin: 5px 0;
@@ -330,10 +330,10 @@ const confirmDelete = async (book) => {
         gap: 5px;
 
         &.edit-button {
-          background-color: var(--secondary-color);
+          background-color: $secondary-color;
         }
         &.delete-button {
-          background-color: var(--danger-color);
+          background-color: $danger-color;
         }
       }
     }

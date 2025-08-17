@@ -44,15 +44,15 @@ const setRating = (star) => {
   .star {
     font-size: 2em;
     cursor: pointer;
-    color: var(--star-color-empty, #ccc); // Usa variables CSS si main.scss no se aplica
+    color: $star-color-empty; // Usa variables CSS si main.scss no se aplica
     transition: color 0.2s;
 
     &.filled {
-      color: var(--star-color-filled, #FFD700);
+      color: $star-color-filled;
     }
 
     &:hover {
-      color: var(--star-color-filled, #FFD700);
+      color: $star-color-filled;
     }
   }
 }

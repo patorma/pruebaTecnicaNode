@@ -27,20 +27,20 @@ defineProps({
   bottom: 20px;
   right: 20px;
   padding: 15px 25px;
-  border-radius: var(--border-radius, 5px);
+  border-radius: $border-radius;
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
   color: white;
   z-index: 1001;
   font-weight: bold;
 
   &.success {
-    background-color: var(--success-color, #8BC34A);
+    background-color: $success-color;
   }
   &.error {
-    background-color: var(--danger-color, #f44336);
+    background-color: $danger-color;
   }
   &.info {
-    background-color: var(--secondary-color, #2196F3);
+    background-color: $secondary-color;
   }
 }
 
