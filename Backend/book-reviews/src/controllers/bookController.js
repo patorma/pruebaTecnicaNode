@@ -61,14 +61,11 @@ exports.searchBooks = async (req, res) => {
 
 // GET /api/books/last-search/ (Necesita una colección o campo para guardar búsquedas)
 exports.getLastSearches = async (req, res) => {
-  // Implementación más compleja: deberías tener un modelo para `SearchHistory`
-  // que guarde las búsquedas por usuario y las ordene por fecha.
-  // Por ahora, simulamos. En un entorno real, esto es una integración con MongoDB.
-  // const lastSearches = await SearchHistory.find({ userId: req.user.id }).sort({ createdAt: -1 }).limit(5);
+
   console.log(' Recuperando últimas búsquedas (simulado).');
   res.json([
     "Harry Potter", "El Señor de los Anillos", "Fundación", "Cien años de soledad", "Don Quijote"
-  ]); // Esto debe venir de una base de datos real
+  ]);
 };
 
 // POST /api/books/my-library

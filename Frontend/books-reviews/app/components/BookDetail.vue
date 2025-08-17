@@ -13,7 +13,7 @@
         <div class="info-section">
           <h3>{{ book.title }}</h3>
           <p><strong>Autor:</strong> {{ book.author || 'Desconocido' }}</p>
-          <p><strong>Año de Publicación:</strong> {{ book.firstPublishYear || 'Desconocido' }}</p>
+          <p><strong>Año de Publicación:</strong> {{ book.yearPublication || 'Desconocido' }}</p>
 
           <template v-if="!isInMyLibrary">
             <h4>Tu Reseña:</h4>
@@ -91,7 +91,7 @@ const saveBook = async () => {
     openLibraryId: props.book.openLibraryId,
     title: props.book.title,
     author: props.book.author,
-    firstPublishYear: props.book.firstPublishYear,
+    yearPublication: props.book.yearPublication,
     coverUrl: getCoverImage(props.book), // Pasa la URL original para que el backend la convierta
     review: reviewText.value,
     rating: rating.value,

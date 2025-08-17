@@ -60,8 +60,8 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
-import { useBooksStore } from '~/stores/books';
-import { useAuthStore } from '~/stores/auth';
+import { useBooksStore } from '../stores/books';
+import { useAuthStore } from '../stores/auth';
 import BookDetail from '~/components/BookDetail.vue';
 import MyLibraryButton from '~/components/MyLibraryButton.vue';
 import NotificationToast from '~/components/NotificationToast.vue';
