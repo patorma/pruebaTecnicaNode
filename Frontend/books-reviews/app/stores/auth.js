@@ -12,8 +12,10 @@ export const useAuthStore = defineStore('auth', {
   actions: {
     async login(credentials) {
       try {
-        this.error = null;
+        this.error = null;  //NUXT_PUBLIC_API_BASE_URL
+        console.log(credentials)
         const response = await axios.post('/auth/login', credentials);
+        console.log(response)
         const { token, user } = response.data;
         
         this.token = token;
